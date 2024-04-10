@@ -37,7 +37,6 @@ jobs:
           
       - name: Build the app
       # 构建调试版 APK
-        working-directory: ./project
         run: |
           if [ ! -f "gradlew" ]; then gradle wrapper; fi
           chmod +x gradlew
